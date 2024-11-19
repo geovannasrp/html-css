@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+:root{
+    --cor0: #F2E6D8;
+    --cor1: #D9C2A7;
+    --cor2: #BFA07A;
+    --cor3: #8C6B42;
+    --cor4: #F2F2F0;
+    --cor5: #382a1a;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif; 
+    --fonte-android: "Android", cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:var(--cor0);
+    font-family: var(--fonte-padrao);
+    color: var(--cor5);
+}
+
+
+header{
+    /* background-image: linear-gradient(to bottom, var(--cor1), var(--cor3)); */
+    /* width: 500px; */
+    /* background-color: var(--cor3); */
+    min-height: 150px;
+    text-align: center;
+    padding-top: 32px;
+    /* margin-bottom: 8px; */
+}
+
+header > h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 8px;
+    
+    text-shadow: 2px 2px 0px rgba(61, 47, 47, 1);
+    
+}
+
+header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.1em;
+    color: white;
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.216);
+}
+
+div{
+    width: 100%;
+}
+
+.mulher {
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    display:block;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url("mulhercozinhando.jpg");
+}
+
+
+nav{
+    background-color: var(--cor1);
+    padding: 16px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.005);
+    /* margin-top: 8px; */
+    margin-bottom: 8px;
+}
+
+nav > a{
+    color: var(--cor3);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+nav > a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin-bottom: 30px;
+    padding:20px;
+    background-color: var(--cor0);   
+    margin: auto;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.631);
+    border-radius: 10px;
+    /* border-top-right-radius: 10px; */
+}
+
+main > h1,h2,h3 {
+    line-height: 24px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+main > ul {
+    padding-left: 40px;
+}
+
+main > p {
+    line-height: 24px;
+    text-align: justify;
+}
+
+footer {
+    margin-bottom: 64px;
+}
